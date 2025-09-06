@@ -1,0 +1,362 @@
+public class lab78 {
+    public static void main(String[] args){
+        String greeting = "Hello";
+        System.out.println(greeting);
+    }
+}
+
+class length{
+    public static void main(String[] args){
+        String text= "arindom chakraborty";
+        System.out.println("the length of the text is" + text.length());
+    }
+}
+
+class Case {
+    public static void main(String[] args){
+        String text= "arindom";
+        System.out.println("the upper cse is "+ text.toUpperCase());
+        System.out.println("the lower case letters are" + text.toLowerCase());
+        }
+
+}
+
+class Indexof{
+    public static void main(String[] args){
+        String text = "arindom chakraborty";
+        System.out.println(text.indexOf("chakraborty"));
+    }
+}
+class Compare{
+    public static void main(String[] args){
+        String text1 = "arindom";
+        String text2 = "chakraborty";
+
+        String text3 = "aritra";
+        String text4 = "aritra";
+        System.out.println(text1.equals(text2));
+        System.out.println(text3.equals(text4));
+
+    }
+}
+
+class Trim{
+    public static void main(String[] args){
+        String text = "  arindom  chakraborty";
+        System.out.println(text);
+        System.out.println(text.trim());
+
+
+
+    }
+}
+
+class Concatenation{
+    public static void main(String[] args){
+        String text = "arindom chakraborty";
+        String age= "24";
+        System.out.println( text + " " + age);
+    }
+}
+
+class Concat2{
+    public static void main(String[] args){
+        String text = "arindom";
+        String Text = "chakrabory";
+        String age = "24";
+        String result =text.concat(Text);
+        System.out.println(" " + result + " ");
+    }
+}
+
+class numstring {
+    public static void main(String[] args){
+        int x = 10;
+        int y = 20;
+        int z = x + y;
+        String x1 = "10";
+        String y2 = "20";
+        String z3 = x1 + y2;
+        System.out.println(z);
+        System.out.println(z3);
+    }
+}
+
+class spc {
+    public static void main(String[] args){
+        String Text =" i love java and \"c\" both";
+        String Text1 =" it sometimes feel\'s hard performing programs";
+        String Text2 =" i should go for python \\ c ";
+        System.out.println( Text + Text1 + Text2);
+    }
+}
+class Maths{
+    public static void main(String[] args){
+        int x = 10;
+        int y = 20;
+        int z=-40;
+        double q= 4.87;
+
+        System.out.println(Math.round(q) + Math.ceil(q) + Math.floor(q));
+    }
+}
+class Rand{
+    public static void main(String[] args){
+        int x=(int)(Math.random()*101);
+        System.out.println(x);
+    }
+}
+class Bool{
+    public static void main(String[]args){
+        boolean isitme=true;
+        boolean isityou=false;
+        int x= 10,y=20;
+        int myAge=24,vottinAge=18;
+        System.out.println(isitme );
+        System.out.println(isityou );
+        System.out.println(x>y );
+        System.out.println(x==y );
+        System.out.println(myAge>=vottinAge );
+    }
+}
+
+class If{
+    public static void main(String[] args){
+        int x=20;
+        int y= 28,z=20,q=20;
+        if(x<y){
+            System.out.println("x is less than y");
+        }
+        if(z==q){
+            System.out.println("z is equal to q");
+
+        }
+        boolean isme=true;
+        if(isme)
+            System.out.println("my name is Arindom");
+            System.out.println("this line is out of the condition");
+
+    }
+}
+
+class Else{
+    public static void main(String[] args){
+        boolean isme=true;
+        if(isme){
+            System.out.println("my name is Arindom");
+        }
+        else{
+            System.out.println("Thats not me");
+        }
+    }
+}
+
+class Elseif{
+    public static void main(String[] args){
+        int weather = 2;
+        if (weather == 1) {
+            System.out.println("Bring an umbrella.");
+        } else if (weather == 2) {
+            System.out.println("Wear sunglasses.");
+        } else {
+            System.out.println("Just go outside normally.");
+        }
+    }
+}
+
+class Shrtifelse{
+    public static void main(String[] args) {
+        int x=20;
+        String result=(x>18)? "Its me" : "Its not me";
+        System.out.println(result);
+
+    }
+}
+
+class Nestedif{
+    public static void main(String[] args) {
+        int age = 20;
+        boolean isCitizen = true;
+
+        if (age >= 18) {
+            System.out.println("Old enough to vote.");
+
+            if (isCitizen) {
+                System.out.println("And you are a citizen, so you can vote!");
+            } else {
+                System.out.println("But you must be a citizen to vote.");
+            }
+        } else {
+            System.out.println("Not old enough to vote.");
+        }
+    }
+}
+
+class Logicop{
+    public static void main(String[] args) {
+        boolean isLoggedIn = true;
+        boolean isAdmin = false;
+        int securityLevel = 3; // 1 = highest
+
+        if (isLoggedIn && (isAdmin || securityLevel <= 2)) {
+            System.out.println("Access granted");
+        } else {
+            System.out.println("Access denied");
+        }
+    }
+}
+
+class Swith{
+    public static void main(String[] args) {
+        int day = 5;
+        switch(day){
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+
+        }
+    }
+}
+
+class Switch2{
+    public static void main(String[] args) {
+        int day = 4;
+        switch (day) {
+            case 6:
+                System.out.println("Today is Saturday");
+                break;
+            case 7:
+                System.out.println("Today is Sunday");
+                break;
+            default:
+                System.out.println("Looking forward to the Weekend");
+        }
+    }
+}
+
+class Whiles{
+    public static void main(String[] args) {
+
+        int i = 0;
+        while (i < 5) {
+            i++;
+            System.out.println(i);
+
+        }
+    }
+}
+
+class Whle{
+    public static void main(String[] args) {
+        int i = 10;
+
+        while (i < 5) {
+            System.out.println("This will never be printed");
+        }
+    }
+}
+class Dowhle{
+    public static void main(String[] args) {
+        int i = 0;
+        do {
+            System.out.println(i);
+            i++;
+        }
+        while (i < 5);
+    }
+}
+
+class For{
+    public static void main(String[] args) {
+        for (int i = 0; i <= 10; i = i + 2) {
+            System.out.println(i);
+        }
+    }
+
+}
+
+class SuminFor{
+    public static void main(String[] args) {
+        int sum = 0;
+        for (int i = 1; i <= 5; i++) {
+            sum = sum + i;
+        }
+        System.out.println("Sum is " + sum);
+
+
+    }
+}
+class NestFor{
+    public static void main(String[] args) {
+        for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= 3; j++) {
+                System.out.print(i * j + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+class Foreach{
+    public static void main(String[] args) {
+        String persons[]= { "he", "him", "she","her"};
+        for(String person:persons){
+            System.out.println(person);
+        }
+    }
+}
+class BrkCont{
+    public static void main(String[] args) {
+        for (int i = 0; i < 6; i++) {
+            if (i == 2) {
+                continue;
+            }
+            if (i == 4) {
+                break;
+            }
+            System.out.println(i);
+
+
+        }
+    }
+}
+class Mularray{
+    public static void main(String[] args) {
+        int mynum[][]={{ 1,4,6}, { 2,3,4,5,6}};
+        int i,j;
+        for(i=0;i<mynum.length;i++){
+            for(j=0;j<mynum[i].length;j++){
+                System.out.print(mynum[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}
+class Mularreach{
+    public static void main(String[] args) {
+        int myNum[][]={{ 1,2,3,4},{ 5,6,7,8,9}};
+
+        for(int i[]:myNum){
+            for(int j:i){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
